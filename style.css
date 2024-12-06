@@ -13,7 +13,7 @@ body {
 
 /* Dark Theme */
 body[data-bs-theme="dark"] {
-    background-color: #333;
+    background-color: #18181d;
     color: #ddd;
 }
 
@@ -26,7 +26,7 @@ body[data-bs-theme="dark"] {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
-    color: #333;
+    color: #333333;
     cursor: pointer;
 }
 
@@ -43,7 +43,7 @@ body[data-bs-theme="dark"] #theme-toggle {
 
 /* Dark Theme Form */
 body[data-bs-theme="dark"] .form-container {
-    background-color: #444;
+    background-color:#201f27 ;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -75,6 +75,19 @@ body[data-bs-theme="dark"] .form-container label {
     margin-bottom: 1rem;
     border-radius: 8px;
     border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+body[data-bs-theme="dark"] .form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #293444;
     font-size: 1rem;
 }
 
@@ -154,4 +167,44 @@ body[data-bs-theme="dark"] .form-container input[type="submit"] {
 .img5 {
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
+}
+body {
+    text-align: center;font-family: sans-serif;
+    background-color: #f4f4f9;
+}
+.btn1{
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    border: none;
+    height: 30px;
+    width: 50px;
+    border-radius: 0.3rem;
+}
+.btn1:hover{
+    box-shadow: 12px 12px 12px rgba(0,0,0,0.1) inset,-10px -10px 10px white inset;
+}
+
+::-webkit-scrollbar {
+    width: 0.9rem;
+}
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+    min-height: 20px; 
+    background-image: linear-gradient(purple,blue,pink);
+    border-radius: 8px;
+}
+
+body[data-bs-theme="dark"]::-webkit-scrollbar {
+    width: 0.9rem;
+}
+body[data-bs-theme="dark"]::-webkit-scrollbar-track {
+    background: #333;
+}
+body[data-bs-theme="dark"]::-webkit-scrollbar-thumb {
+    min-height: 20px; 
+    background-image: linear-gradient(purple,blue,pink);
+    border-radius: 8px;
 }

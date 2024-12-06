@@ -40,3 +40,9 @@ if (username === '') {
 msg.innerText = message ;
 
 }
+
+function nodefunction(){
+    document.getElementById("message").innerHTML = document.getElementById("row@").firstChild.nodeValue;
+    document.getElementById("row@").innerHTML = document.getElementById("message").childNodes[0].nodeValue;
+
+}

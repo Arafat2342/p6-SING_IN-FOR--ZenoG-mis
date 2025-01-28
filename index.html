@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="message">it's dom structure</title>
+    <title id="row">It's DOM Structure</title>
 </head>
 <body data-bs-theme="light">
-    <button class="btn1" type="button" onclick="nodefunction()">Get</button>
-    <p id="row">This is some text in the row.</p>
+    <button class="btn1" type="button" id="getButton">Get</button>
+    <p id="message">This is some text in the row.</p>
 
 
     <script>
+        document.getElementById("getButton").addEventListener("click", nodefunction);
+
         function nodefunction(){
             var messageElement = document.getElementById("message");
             var row1Element = document.getElementById("row");
 
-            // Safely access the first child node's value
+                messageElement.textContent = row1Element.firstChild.nodeValue;
             if (row1Element.firstChild) {
-                messageElement.innerHTML = row1Element.firstChild.nodeValue;
+                messageElement.textContent = row1Element.firstChild.nodeValue;
             }
 
-            // Update row1Element based on messageElement's first child node value
+                row1Element.textContent = messageElement.firstChild.nodeValue;
             if (messageElement.firstChild) {
-                row1Element.innerHTML = messageElement.firstChild.nodeValue;
+                row1Element.textContent = messageElement.firstChild.nodeValue;
             }
         }
     </script>
